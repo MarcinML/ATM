@@ -1,4 +1,5 @@
 #include "pinverificationcomponent.h"
+#include <iostream>
 
 PinVerificationComponent::PinVerificationComponent()
 {

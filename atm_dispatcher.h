@@ -1,6 +1,7 @@
 #ifndef ATM_DISPATCHER_H
 #define ATM_DISPATCHER_H
 #include "Component.h"
+#include "Dispatcher.h"
 
 
 class ATM_Dispatcher : public Dispatcher

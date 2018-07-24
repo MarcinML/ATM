@@ -17,11 +17,11 @@ void ATM_Dispatcher::registerComponent(Component& component)
 {
     if(lastElement == nullptr)
     {
-        firstElement = component;
-        lastElement = component;
+        firstElement = &component;
+        lastElement = &component;
         return;
     }
     lastElement->setNext(component);
-    lastElement = component;
+    lastElement = &component;
 }
 

@@ -10,13 +10,13 @@ public:
 
     virtual void handle(const Message& message) = 0;
 
-    void setNext(const Component& component)
+    void setNext(Component& component)
     {
         if (next != nullptr)
         {
             throw std::exception("Cannot change next");
         }
-        next = component;
+        next = &component;
     }
 protected:
     Component * next = nullptr;
